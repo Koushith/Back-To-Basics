@@ -1,0 +1,60 @@
+/* fonts */
+/*
+    font-family: 'Cinzel', serif;
+    font-family: 'PT Serif', serif;
+*/
+
+/* - Title & body: #414141
+- Subtitle: #7D7D7D
+- Links: #CA5E10;
+ */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  color: #414141;
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: 96px;
+  color: inherit;
+  line-height: 0.9;
+}
+
+.subtitle {
+  color: #7d7d7d;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.3125rem;
+}
+
+a {
+  color: #ca5e10;
+}
+
+header {
+  max-width: 75rem;
+  text-align: center;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 39rem;
+  margin: 0 auto;
+}
