@@ -217,26 +217,4 @@ Comments can span single or multiple lines.
   Comments can be
   multiple lines long.
 -->
-Whitespace
-Whitespace, such as line breaks, added to an HTML document between block-level elements will generally be ignored by the browser and are not added to increase spacing on the rendered HTML page. Rather, whitespace is added for organization and easier reading of the HTML document itself.
 
-<p>Test paragraph</p>
-
-<!-- The whitespace created by this line, and above/below this line is ignored by the browser-->
-
-<p>Another test paragraph, this will sit right under the first paragraph, no extra space between.</p>
-Document Type Declaration
-The document type declaration <!DOCTYPE html> is required as the first line of an HTML document. The doctype declaration is an instruction to the browser about what type of document to expect and which version of HTML is being used, in this case it’s HTML5.
-
-<!DOCTYPE html>
-<title> Title Element
-The <title> element contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab in which the HTML page is displayed. The <title> element can only be contained inside a document’s <head> element.
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Title of the HTML page</title>
-  </head>
-</html>
-File Path
-URL paths in HTML can be absolute paths, like a full URL, for example: https://developer.mozilla.org/en-US/docs/Learn or a relative file path that links to a local file in the same folder or on the same server, for example: ./style.css. Relative file paths begin with ./ followed by a path to the local file. ./ tells the browser to look for the file path from the current folder.
