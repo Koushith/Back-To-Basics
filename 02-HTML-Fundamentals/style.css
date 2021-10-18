@@ -206,8 +206,5 @@ button {
 
 .related-post {
   display: flex;
-}
-
-ul li img {
-  margin-right: 14px;
+  gap: 20px;
 }
