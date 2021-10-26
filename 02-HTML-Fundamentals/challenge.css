@@ -1,11 +1,27 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   line-height: 1.4;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  /*   background-color: red; */
+  display: flex;
+  gap: 40px;
+}
+
+.product-img {
 }
 
 /* PRODUCT */
@@ -14,21 +30,6 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
-}
-
-.product::before {
-  content: 'SALE';
-  background-color: #ec2f2f;
-  color: #fff;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 7px 15px;
-  display: inline-block;
-  position: absolute;
-  top: -17px;
-  left: -38px;
 }
 
 .product-title {
@@ -40,6 +41,20 @@ body {
 }
 
 /* PRODUCT INFORMATION */
+.product-info {
+  /*  (825 - 8 - 250 - 80) / 2  */
+  /*   width: 243px; */
+  flex: 1;
+  margin-top: 20px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .price {
   font-size: 24px;
 }
@@ -49,13 +64,34 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
+}
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+
+  /*   width: 40px;
+  text-align: center; */
+}
+
+.product-description {
+  margin-bottom: 10px;
 }
 
 .more-info:link,
 .more-info:visited {
   color: black;
   margin-bottom: 30px;
+  display: inline-block;
 }
 
 .more-info:hover,
@@ -63,12 +99,15 @@ body {
   text-decoration: none;
 }
 
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
 .color {
   background-color: #000;
   height: 22px;
   width: 22px;
-  display: inline-block;
-  margin-right: 10px;
 }
 
 .color-blue {
@@ -88,11 +127,16 @@ body {
 }
 
 /* PRODUCT DETAILS */
+.product-details {
+  /*   width: 243px; */
+  margin-top: 20px;
+  flex: 1;
+}
+
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
 }
 
 .details-list {
@@ -112,12 +156,12 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
-  width: 100%;
   padding: 15px;
+  width: 100%;
+  border-top: 4px solid black;
 }
 
 .add-cart:hover {
   color: #000;
   background-color: #fff;
-  border-top: 2px solid #000;
 }
