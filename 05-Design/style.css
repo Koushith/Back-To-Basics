@@ -24,6 +24,7 @@ grey color : #343a4a
 body {
   font-family: 'Inter', sans-serif;
   color: #343a4a;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -64,15 +65,13 @@ h2 {
   column-gap: 80px;
 }
 
-.btn--big {
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 16px 32px;
-}
-
 .btn--small {
   font-size: 14px;
-  text-transform: uppercase;
+  padding: 8px 12px;
+}
+
+.btn--big {
+  font-size: 18px;
   padding: 8px 12px;
 }
 
@@ -124,6 +123,10 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  border: 5px;
+  padding: 24px;
 }
 
 .testimonial-box {
